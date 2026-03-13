@@ -1,15 +1,4 @@
-# Campus Bookstore Lab -- Báo cáo sửa lỗi
-
-## Tổng quan
-
-Project **Campus Bookstore** là một bài lab PHP mô phỏng hệ thống quản
-trị nhà sách trong trường học. Trong source code ban đầu có nhiều lỗi
-**syntax** và **logic** được cài sẵn để sinh viên thực hành debug.
-
-Sau khi sửa các lỗi, tất cả các trang quản trị hoạt động đúng và các
-phép tính trong hệ thống cho kết quả hợp lý.
-
-------------------------------------------------------------------------
+# Báo cáo sửa lỗi
 
 # Danh sách lỗi và cách sửa
 
@@ -152,32 +141,3 @@ Biến `$reportRows` chưa được khai báo.
 $reportRows = [];
 ```
 
-------------------------------------------------------------------------
-
-# Kết quả sau khi sửa
-
-Sau khi sửa tất cả các lỗi:
-
--   Tất cả các route đều truy cập được:
-    -   `/`
-    -   `/?page=dashboard`
-    -   `/?page=orders`
-    -   `/?page=checkout`
-    -   `/?page=customers`
-    -   `/?page=reports`
-    -   `/?page=settings`
--   Dashboard hiển thị số liệu hợp lý.
--   Danh sách đơn hàng hiển thị đúng và sắp xếp đơn mới trước.
--   Checkout tính toán chính xác.
--   Trang Reports và Settings không còn lỗi cú pháp.
-
-------------------------------------------------------------------------
-
-## Kết luận
-
-Bài lab giúp rèn luyện kỹ năng phát hiện và sửa lỗi trong PHP, bao gồm:
-
--   Lỗi cú pháp (syntax errors)
--   Lỗi logic trong tính toán
--   Lỗi sắp xếp dữ liệu
--   Lỗi sử dụng biến chưa khởi tạo
